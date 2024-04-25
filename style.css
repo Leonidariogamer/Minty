@@ -1,0 +1,82 @@
+body {
+  color: #001021;
+  background-image: url("assets/images/VRChat_2024-04-21_18-05-46.611_1920x1080.png");
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.10em;
+  animation: floatInWords 1.5s ease-out;
+  margin-bottom: 90px;
+}
+
+p {
+  font-size: 1.55em;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  animation: floatInWords 1.5s ease-out;
+}
+
+.container {
+  width: 30%;
+  margin: 10px auto;
+  border: 1px solid #474E58;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #474E58;
+  animation: enlargeBox 1.5s ease-out;
+  text-align: center;
+  display: inline-block;
+}
+
+.box {
+  border: 1px solid #545a61;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  background-color: #545a61;
+  display: inline-block; 
+  margin: 10px; 
+  text-align: center;
+}
+@keyframes floatInWords {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes enlargeBox {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container:nth-child(1) {
+  animation: enlargeBox 1.5s ease-out;
+}
+.container:nth-child(2) {
+  animation: enlargeBox 1.5s ease-out forwards 2s;
+}
+.container:nth-child(3) {
+  animation: enlargeBox 1.5s ease-out forwards 4s;
+}
